@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+.container{
+    display: grid;
+    place-items:center ;
+}
+.game{
+    margin-top: 100px;
+    width:500px;
+    height: 380px;
+    border: 2px solid rgba(214, 210, 210, 0.445);
+    border-radius: 5px;
+}
+#player{
+    position: relative;
+    background: url(img/hero100.png) center center no-repeat;
+    background-position: cover;
+    top: 250px;
+    width: 100px;
+    height: 100px;
+    left: 18px;
+
+}
+.up_above{  
+    animation: up  0.3s linear;
+}
+@keyframes up {
+    0%{top:250px}
+    30%{top:190px}
+    70%{top: 190px}
+    100%{top: 140px}
+}
+#obstacles{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: url(img/dragon100.png) center center no-repeat;
+    background-position: cover;
+    top: 171px;
+    left: 470px;
+    animation: obstacles 0.2s infinite linear ;
+}
+@keyframes obstacles {
+    0%{left:470px}
+    100%{left:-10px}
+}
+p{
+    text-align: center;
+    margin-top: -80px;
+    font-size: larger;
+    font-family: system-ui,sans-serif;
+}
+
+@media screen and (max-width:505px){
+    .game{
+        margin-top: 100px;
+        width:400px;
+        height: 400px;
+
+    }
+    #obstacles{
+        position: relative;
+    width: 100px;
+    height: 100px;
+    background: url(img/dragon100.png) center center no-repeat;
+    background-position: cover;
+    top: 171px;
+    left: 380px;
+    animation: obstacles 0.2s infinite linear ;
+    
+    }
+}
