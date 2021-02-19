@@ -57,19 +57,5 @@ p{
 @media screen and (max-width:505px){
     .game{
         margin-top: 100px;
-        width:400px;
-        height: 400px;
-
     }
-    #obstacles{
-        position: relative;
-    width: 100px;
-    height: 100px;
-    background: url(img/dragon100.png) center center no-repeat;
-    background-position: cover;
-    top: 171px;
-    left: 380px;
-    animation: obstacles 0.2s infinite linear ;
-    
     }
-}
