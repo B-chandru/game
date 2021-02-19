@@ -57,5 +57,11 @@ p{
 @media screen and (max-width:505px){
     .game{
         margin-top: 100px;
+        width:400px;
+        height:400px;
     }
+  #obstacles{
+    top:171px;
+     left:380px;
+}
     }
